@@ -13,6 +13,11 @@ export class IndexPagePage implements OnInit {
   enrollNow(){
     this.navCtrl.navigateForward('/studentstatus-page');
   }
+  
+  goToSettings(){
+    this.navCtrl.navigateForward('/settings-page');
+  }
+  
   ngOnInit() {
   }
 

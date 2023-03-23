@@ -5,5 +5,81 @@
 </ion-header>
 
 <ion-content>
+   <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>STUDENT INFORMATION</ion-label>
+        <br>
+        <ion-label fixed>ID Number</ion-label>
+        <ion-input type="text" >{{ userInput1 }}</ion-input>
+        <br>
+        <ion-label fixed>Complete Name</ion-label>
+        <ion-input type="text" >{{ userInput2 }}{{ userInput3 }}{{ userInput4 }}</ion-input>
+        <ion-label fixed>Address</ion-label>
+        <ion-input type="text" >{{userInput5 }}</ion-input>
+        <ion-label fixed>Contact Number</ion-label>
+        <ion-input type="text" >{{userInput6 }} </ion-input>
+        <ion-label fixed>Blood Type</ion-label>
+        <ion-input type="text" > {{ userInput7 }}</ion-input>
+        <ion-label fixed>Birthdate</ion-label>
+        <ion-input type="text" >{{ userInput8  }}</ion-input>
+      </ion-col>
+    </ion-row>
+   </ion-grid>
 
+   <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>STUDENT INFORMATION</ion-label>
+        <br>
+        <ion-label fixed>ID Number</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <br>
+        <ion-label fixed>Complete Name</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Address</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Contact Number</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Blood Type</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Birthdate</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-col>
+    </ion-row>
+   </ion-grid>
+
+
+   <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>STUDENT INFORMATION</ion-label>
+        <br>
+        <ion-label fixed>ID Number</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <br>
+        <ion-label fixed>Complete Name</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Address</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Contact Number</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Blood Type</ion-label>
+        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Birthdate</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-col>
+    </ion-row>
+   </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" (click) = "goToSuccess()">ENROLL NOW</ion-button>
+        <ion-button expand="block" (click) = "goBack()">BACK</ion-button>
+      </ion-col>
+      </ion-row>
+  </ion-grid>
+   
+   
 </ion-content>

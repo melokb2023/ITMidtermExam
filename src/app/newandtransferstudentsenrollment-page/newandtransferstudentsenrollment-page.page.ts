@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-newandtransferstudentsenrollment-page',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewandtransferstudentsenrollmentPagePage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private navCtrl: NavController,
+    private alertController:AlertController
+  ) { }
 
   ngOnInit() {
   }
 
+  goToEnrollmentInformation(){
+    this.navCtrl.navigateForward('/enrollmentconfirmation-page');
+  }
+  
+  goToSettings(){
+    this.navCtrl.navigateForward('/oldstudentenrollment-page');
+  }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-studentstatus-page',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentstatusPagePage implements OnInit {
 
-  constructor() { }
+  selectedOption:string = '';
+
+  
+constructor(
+    private navCtrl: NavController,
+    private alertController:AlertController
+  ) { }
 
   ngOnInit() {
   }
 
+  checkRadioValue(){
+    
+
+}
+goToSettings(){
+  this.navCtrl.navigateForward('/settings-page');
+}
+  
+  goToPage2(){
+    this.navCtrl.navigateForward('/oldstudentenrollment-page');
+  }
+ 
 }

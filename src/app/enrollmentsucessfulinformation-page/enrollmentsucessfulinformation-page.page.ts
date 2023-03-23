@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 @Component({
   selector: 'app-enrollmentsucessfulinformation-page',
   templateUrl: './enrollmentsucessfulinformation-page.page.html',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnrollmentsucessfulinformationPagePage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController, private alertController:AlertController) { }
+
 
   ngOnInit() {
+  }
+
+  goToIndex(){
+    this.navCtrl.navigateBack('/index-page');
+  }
+
+  goToSettings(){
+    this.navCtrl.navigateBack('/settings-page');
   }
 
 }
