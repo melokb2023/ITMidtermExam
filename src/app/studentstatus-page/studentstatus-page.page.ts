@@ -21,13 +21,7 @@ constructor(
   }
 
   checkRadioValue(){
-   //  if(){
-     
-   //  }
 
-  //   else{
- //     this.goToPage2();
- //    } 
 
 }
 goToSettings(){

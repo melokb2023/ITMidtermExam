@@ -11,14 +11,14 @@ import { AlertController } from '@ionic/angular';
 })
 export class OldstudentenrollmentPagePage implements OnInit {
 
-  userInput1:string='';
-  userInput2:string='';
-  userInput3:string='';
-  userInput4:string='';
-  userInput5:string='';
-  userInput6:string='';
-  userInput7:string='';
-  userInput8:string='';
+  userInput1: any ='';
+  userInput2: any ='';
+  userInput3:any ='';
+  userInput4:any ='';
+  userInput5:any ='';
+  userInput6:any ='';
+  userInput7:any ='';
+  userInput8:any ='';
   
   constructor(private navCtrl: NavController,
     private alertController:AlertController) { }
@@ -50,9 +50,6 @@ export class OldstudentenrollmentPagePage implements OnInit {
     }
   }
 
-  
-  
-  
   goToEnrollmentInformation(){
       const userInput1 = (document.getElementById('userInput1') as HTMLInputElement).value;
       const userInput2 = (document.getElementById('userInput2') as HTMLInputElement).value;
@@ -65,17 +62,18 @@ export class OldstudentenrollmentPagePage implements OnInit {
 
       const navigationExtras = {
         queryParams: {
-          userInput1 : this.userInput1,
-          userInput2 : this.userInput2,
-          userInput3 : this.userInput3,
-          userInput4 : this.userInput4,
-          userInput5 : this.userInput5,
-          userInput6 : this.userInput6,
-          userInput7 : this.userInput7,
-          userInput8 : this.userInput8,
+          userInput1 : userInput1,
+          userInput2 : userInput2,
+          userInput3 : userInput3,
+          userInput4 : userInput4,
+          userInput5 : userInput5,
+          userInput6 : userInput6,
+          userInput7 : userInput7,
+          userInput8 : userInput8,
           }
       }
-  this.navCtrl.navigateForward('/enrollmentconfirmation-page');
+
+      this.navCtrl.navigateForward('/enrollmentconfirmation-page',navigationExtras);
   }
 
   goToSettings(){
