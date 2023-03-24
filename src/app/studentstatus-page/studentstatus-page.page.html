@@ -34,20 +34,20 @@
 
   
   <ion-list>
-    <ion-radio-group>
+    <ion-radio-group [(ngModel)] = "selectedOption">
        <ion-item>
         <ion-radio></ion-radio>
-        <ion-label>NEW STUDENT</ion-label>
+        <ion-label value="newstudent">NEW STUDENT</ion-label>
        </ion-item> 
       <br>
       <ion-item>
         <ion-radio></ion-radio>
-        <ion-label>OLD STUDENT</ion-label>
+        <ion-label value="oldstudent">OLD STUDENT</ion-label>
       <br>
       </ion-item>
       <ion-item>
          <ion-radio></ion-radio>
-         <ion-label>TRANSFEREE</ion-label>
+         <ion-label value="transferee">TRANSFEREE</ion-label>
          <br>
       </ion-item>
  
