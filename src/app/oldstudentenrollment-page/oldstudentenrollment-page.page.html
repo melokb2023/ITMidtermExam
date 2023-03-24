@@ -63,37 +63,177 @@
  <ion-grid>
   <ion-row>
     <ion-col>
-        <ion-list>
+        <ion-list [(ngModel)="selectedOption2"]>
           <ion-item id="rounded">
             <ion-label fixed>Course</ion-label>
             <ion-select interface="action-sheet" placeholder="Select fruit">
-              <ion-select-option value="apples" id="bsit">BSIT</ion-select-option>
-              <ion-select-option value="oranges" id="bsba">BSBA</ion-select-option>
-              <ion-select-option value="bananas" id="bsa">BSA</ion-select-option>
-              <ion-select-option value="bananas" id="bsais">BSAIS</ion-select-option>
+              <ion-select-option value="BSIT" id="bsit">BSIT</ion-select-option>
+              <ion-select-option value="BSBA" id="bsba">BSBA</ion-select-option>
+              <ion-select-option value="BSA" id="bsa">BSA</ion-select-option>
+              <ion-select-option value="BSAIS" id="bsais">BSAIS</ion-select-option>
             </ion-select>
+          </ion-item>
+        </ion-list>
+
+        <ion-list *ngIf="selectedOption2 === 'BSIT'">
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox1"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox2"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox3"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox4"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox5"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox6"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox7"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox8"></ion-checkbox>
+          </ion-item>
+        </ion-list>
+
+        <ion-list *ngIf="selectedOption2 === 'BSBA'">
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox1"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox2"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox3"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox4"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox5"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox6"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox7"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox8"></ion-checkbox>
+          </ion-item>
+        </ion-list>
+
+        <ion-list *ngIf="selectedOption2 === 'BSA'">
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox1"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox2"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox3"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox4"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox5"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox6"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox7"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox8"></ion-checkbox>
+          </ion-item>
+        </ion-list>
+
+        <ion-list *ngIf="selectedOption2 === 'BSAIS'">
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox1"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox2"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox3"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox4"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox5"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox6"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox7"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label></ion-label>
+            <ion-checkbox [(ngModel)]="checkbox8"></ion-checkbox>
           </ion-item>
         </ion-list>
 
         <ion-label>Year Level:</ion-label>
               <ion-list>
-                <ion-radio-group>
+                <ion-radio-group [(ngModel)]="selectedOption">
                    <ion-item>
-                    <ion-radio></ion-radio>
-                    <ion-label>FIRST YEAR</ion-label>
+                    <ion-radio value="FIRST YEAR"></ion-radio>
+                    <ion-label >FIRST YEAR</ion-label>
                    </ion-item> 
                   <ion-item>
-                    <ion-radio></ion-radio>
-                    <ion-label>SECOND YEAR</ion-label>
+                    <ion-radio value="SECOND YEAR"></ion-radio>
+                    <ion-label >SECOND YEAR</ion-label>
                   </ion-item>
                   <ion-item>
-                     <ion-radio></ion-radio>
-                     <ion-label>THIRD YEAR</ion-label>
+                     <ion-radio value="THIRD YEAR"></ion-radio>
+                     <ion-label >THIRD YEAR</ion-label>
                      <br>
                   </ion-item>
                   <ion-item>
-                    <ion-radio></ion-radio>
-                    <ion-label>FOURTH YEAR</ion-label>
+                    <ion-radio value="FOURTH YEAR"></ion-radio>
+                    <ion-label >FOURTH YEAR</ion-label>
                     <br>
                  </ion-item>
              

@@ -21,6 +21,21 @@ constructor(
   }
 
   checkRadioValue(){
+    if(this.selectedOption === 'newstudent'){
+      this.navCtrl.navigateForward('/newandtransferstudentenrollment-page');
+    }
+    else if(this.selectedOption === 'oldstudent'){
+      this.navCtrl.navigateForward('/oldstudentenrollment-page');
+    }
+    else if(this.selectedOption === 'newstudent'){
+      this.navCtrl.navigateForward('/newandtransferstudentenrollment-page');
+    }
+    else{
+      const alert =this.alertController.create({
+        message:'Please select one',
+        buttons:['OK'],
+      });
+    }
 
 
 }
