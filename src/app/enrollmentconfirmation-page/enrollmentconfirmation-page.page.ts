@@ -47,7 +47,9 @@ constructor(
   goToSuccess(){
     this.navCtrl.navigateForward('/enrollmentsucessfulinformation-page');
   }
-
+  goToSettings(){
+    this.navCtrl.navigateForward('/settings-page');
+  }
 
 
 }

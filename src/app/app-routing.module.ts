@@ -38,7 +38,11 @@ const routes: Routes = [
   {
     path: 'enrollmentsucessfulinformation-page',
     loadChildren: () => import('./enrollmentsucessfulinformation-page/enrollmentsucessfulinformation-page.module').then( m => m.EnrollmentsucessfulinformationPagePageModule)
+  },  {
+    path: 'oldstudentenrollment-page',
+    loadChildren: () => import('./oldstudentenrollment-page/oldstudentenrollment-page.module').then( m => m.OldstudentenrollmentPagePageModule)
   },
+
 ];
 
 @NgModule({

@@ -1,7 +1,47 @@
+
+
+div{
+    background-color:skyblue;
+}
+ion-item{
+    background-color:skyblue;
+}
+#rounded{
+    background-color:skyblue;
+}
+#rounded2{
+    background-color:white;
+    color:black;
+}
 ion-input{
-    background:white;
+    background-color:white;
+    color:black;
+}
+.item-background-color{
+    --ion-item-background:skyblue;
 }
 
+ion-select{
+    background-color:white;
+    color:black;
+}
 ion-grid{
-    background:rgb(191, 213, 241);
+    border:3px solid black;
+}
+ion-row{
+    border:3px solid black;
+}
+ion-col{
+    border:3px solid black;
+}
+
+.requirement{
+    text-align:center;
+}
+
+*{
+    text-align:center;
+}
+ion-button{
+    width:45%;
 }

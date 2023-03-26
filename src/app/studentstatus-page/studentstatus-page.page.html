@@ -33,26 +33,21 @@
 
 
   
-  <ion-list>
-    <ion-radio-group [(ngModel)] = "selectedOption">
-       <ion-item>
-        <ion-radio></ion-radio>
-        <ion-label value="newstudent">NEW STUDENT</ion-label>
-       </ion-item> 
-      <br>
-      <ion-item>
-        <ion-radio></ion-radio>
-        <ion-label value="oldstudent">OLD STUDENT</ion-label>
-      <br>
-      </ion-item>
-      <ion-item>
-         <ion-radio></ion-radio>
-         <ion-label value="transferee">TRANSFEREE</ion-label>
-         <br>
-      </ion-item>
- 
-  </ion-radio-group>
-  </ion-list>
+  <div>
+  <ion-radio-group slot="start"  [(ngModel)] = "selectedOption">
+      
+        <ion-radio value="newstudent" id="newstudent" >NEW STUDENT</ion-radio>
+        <ion-label>NEW STUDENT</ion-label>
+        <br>
+        <ion-radio value="oldstudent" id="oldstudent">OLD STUDENT</ion-radio>
+        <ion-label>OLD STUDENT</ion-label>
+        <br>
+        <ion-radio value="transferee" id="transferee">TRANSFEREE</ion-radio>
+        <ion-label>TRANSFEREE</ion-label>
+        <br>
+      </ion-radio-group>
+  
+  </div>
        
 
 <br>
@@ -63,12 +58,16 @@
 <br>
 <br>
 <br>
-<ion-button expand="block" (click) = "goToPage2()">PROCEED</ion-button>
+<ion-button expand="block" (click) = "radioOutcome()">PROCEED</ion-button>
+<br>
+<br>
+
+<a href (click) = "goToSettings()">SETTINGS</a>
       </ion-col>
     </ion-row>
   </ion-grid>
   
 
 
-<a href (click) = "goToSettings()">SETTINGS</a>
+
 </ion-content>

@@ -1,29 +1,50 @@
-ion-grid{
-    background:rgb(185, 185, 240);
+div{
+    background-color:skyblue;
 }
-
-ion-list{
-    background:rgb(200, 200, 247);
-}
-
 ion-item{
-    background:rgb(189, 209, 240);
+    background-color:skyblue;
+}
+#rounded{
+    background-color:skyblue;
+}
+#rounded2{
+    background-color:white;
+    color:black;
 }
 ion-input{
-    background:rgb(131, 131, 134);
-    width:30px;
-    margin:auto;
+    background-color:white;
+    color:black;
+}
+.item-background-color{
+    --ion-item-background:skyblue;
+}
+
+ion-select{
+    background-color:white;
+    color:black;
+}
+ion-grid{
+    background-color: white;
+    color:black;
+    border:1px solid black;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+.requirement{
+    text-align:center;
+}
+ion-row{
+    width:auto;
+    font-size:12px;
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
 }
 ion-col{
-    background:rgb(131, 131, 134);
-}
-
-a{
-    text-align:center;
     width:auto;
-    margin:auto;
-}
-
-#straightword{
-    text-align:center;
+    font-size:12px;
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
 }

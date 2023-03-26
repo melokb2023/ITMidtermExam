@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModel } from '@angular/forms';
-import { NgIf } from '@angular/common';
+
 import { NavController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 
@@ -113,7 +112,10 @@ export class OldstudentenrollmentPagePage implements OnInit {
     this.navCtrl.navigateForward('/settings-page');
   }
 
+  goToEnrollment(){
+    this.navCtrl.navigateForward('/enrollmentconfirmation-page');
+  }
+
 
 }
-
 

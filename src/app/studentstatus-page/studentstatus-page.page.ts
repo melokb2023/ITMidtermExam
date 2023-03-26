@@ -9,7 +9,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class StudentstatusPagePage implements OnInit {
 
-  selectedOption:string = '';
+  selectedOption:string= '';
 
   
 constructor(
@@ -20,31 +20,38 @@ constructor(
   ngOnInit() {
   }
 
-  checkRadioValue(){
+  radioOutcome(){
     if(this.selectedOption === 'newstudent'){
-      this.navCtrl.navigateForward('/newandtransferstudentenrollment-page');
+      this.navCtrl.navigateForward('/newandtransferstudentsenrollment-page');
     }
     else if(this.selectedOption === 'oldstudent'){
       this.navCtrl.navigateForward('/oldstudentenrollment-page');
     }
-    else if(this.selectedOption === 'newstudent'){
-      this.navCtrl.navigateForward('/newandtransferstudentenrollment-page');
+    else if(this.selectedOption === 'transferee'){
+      this.navCtrl.navigateForward('/newandtransferstudentsenrollment-page');
     }
     else{
-      const alert =this.alertController.create({
+      const alert = this.alertController.create({
         message:'Please select one',
-        buttons:['OK'],
+        buttons: ['OK'],
       });
+      alert.then((alert) => alert.present());
     }
 
+  }
 
-}
+  
+    
 goToSettings(){
   this.navCtrl.navigateForward('/settings-page');
 }
   
-  goToPage2(){
-    this.navCtrl.navigateForward('/oldstudentenrollment-page');
+goToPage2(){
+  this.navCtrl.navigateForward('/newandtransferstudentsenrollment-page');
   }
+
+goToPage3(){
+  this.navCtrl.navigateForward('/oldstudentenrollment-page');
+}
  
 }
