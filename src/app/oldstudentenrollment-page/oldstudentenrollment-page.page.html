@@ -57,7 +57,7 @@
   <ion-text>COURSE AND SUBJECTS</ion-text>
   <ion-item class="item-background-color">
        <ion-label>Course:</ion-label>
-       <ion-select placeholder="Select course"  [(ngModel)]="selectedOption2">
+       <ion-select placeholder="Select course" id="selectedOption2"  [(ngModel)]="selectedOption2">
         <ion-select-option value="BSIT" >BSIT</ion-select-option>
         <ion-select-option value="BSBA">BSBA</ion-select-option>
         <ion-select-option value="BSA" >BSA</ion-select-option>
@@ -105,7 +105,7 @@
         <ion-row>
           <ion-col>
             <ion-item>
-             <ion-checkbox [(ngModel)]="checkbox1"></ion-checkbox> 
+             <ion-checkbox id="checkbox1" [(ngModel)]="checkbox1"></ion-checkbox> 
             <ion-label>IT 306 - Capstone Project 1</ion-label>
             </ion-item>
           </ion-col>
@@ -116,7 +116,7 @@
         <ion-row>
           <ion-col>
           <ion-item>
-            <ion-checkbox [(ngModel)]="checkbox2"></ion-checkbox>
+            <ion-checkbox id="checkbox2" [(ngModel)]="checkbox2"></ion-checkbox>
           <ion-label>IT 401 - Artificial Intelligence</ion-label>
         </ion-item>
           </ion-col>
@@ -127,7 +127,7 @@
         <ion-row>
           <ion-col>
             <ion-item>
-              <ion-checkbox [(ngModel)]="checkbox3"></ion-checkbox>
+              <ion-checkbox id="checkbox3" [(ngModel)]="checkbox3"></ion-checkbox>
              <ion-label>IT 209 - Human Computer Interaction</ion-label>
             </ion-item>
           </ion-col>
@@ -138,7 +138,7 @@
      <ion-row>
       <ion-col>
          <ion-item>
-          <ion-checkbox [(ngModel)]="checkbox4"></ion-checkbox>
+          <ion-checkbox id="checkbox4" [(ngModel)]="checkbox4"></ion-checkbox>
         <ion-label>IT 102 - Computer Programming 1</ion-label>
         </ion-item>
       </ion-col>
@@ -149,7 +149,7 @@
      <ion-row>
       <ion-col>
         <ion-item>
-          <ion-checkbox [(ngModel)]="checkbox5"></ion-checkbox>
+          <ion-checkbox id="checkbox5" [(ngModel)]="checkbox5"></ion-checkbox>
         <ion-label>IT Elect 2 - System Integration and Architecture 2</ion-label>
       </ion-item>
       </ion-col>
@@ -160,7 +160,7 @@
       <ion-row>
         <ion-col>
           <ion-item>
-            <ion-checkbox [(ngModel)]="checkbox6"></ion-checkbox>
+            <ion-checkbox id="checkbox6" [(ngModel)]="checkbox6"></ion-checkbox>
         <ion-label>IT Elect 1- Mobile Application Development</ion-label>
         </ion-item>
         </ion-col>
@@ -171,7 +171,7 @@
       <ion-row>
         <ion-col>
           <ion-item>
-            <ion-checkbox [(ngModel)]="checkbox7"></ion-checkbox>
+            <ion-checkbox id="checkbox7" [(ngModel)]="checkbox7"></ion-checkbox>
             <ion-label>GEEL 11- Living In The IT Era</ion-label>
         </ion-item>
         </ion-col>
@@ -182,7 +182,7 @@
       <ion-row>
         <ion-col>
         <ion-item>
-          <ion-checkbox [(ngModel)]="checkbox8"></ion-checkbox>
+          <ion-checkbox id="checkbox8" [(ngModel)]="checkbox8"></ion-checkbox>
         <ion-label>GEEL 13-Gender and Society</ion-label>
         </ion-item>
         </ion-col>
@@ -391,7 +391,7 @@
         <ion-grid>
           <ion-row>
             <ion-col>
-              <ion-checkbox class="checkbox-square"></ion-checkbox>
+              <ion-checkbox [(ngModel)]="option1" class="checkbox-square"></ion-checkbox>
               <ion-label>TOR</ion-label>
             </ion-col>
           </ion-row>
@@ -400,7 +400,7 @@
         <ion-grid>
           <ion-row>
             <ion-col>
-              <ion-checkbox class="checkbox-square"></ion-checkbox>
+              <ion-checkbox [(ngModel)]="option2" class="checkbox-square"></ion-checkbox>
               <ion-label>DIPLOMA</ion-label>
             </ion-col>
           </ion-row>
@@ -409,7 +409,7 @@
         <ion-grid>
           <ion-row>
             <ion-col>
-              <ion-checkbox class="checkbox-square"></ion-checkbox>
+              <ion-checkbox [(ngModel)]="option3" class="checkbox-square"></ion-checkbox>
               <ion-label>FORM 137</ion-label>
             </ion-col>
           </ion-row>
@@ -418,7 +418,7 @@
         <ion-grid>
           <ion-row>
             <ion-col>
-              <ion-checkbox class="checkbox-square"></ion-checkbox>
+              <ion-checkbox [(ngModel)]="option4"class="checkbox-square"></ion-checkbox>
               <ion-label>2x2 ID PICTURE</ion-label>
             </ion-col>
           </ion-row>

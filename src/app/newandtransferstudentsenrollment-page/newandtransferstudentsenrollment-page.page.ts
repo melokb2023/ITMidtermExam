@@ -23,6 +23,7 @@ export class NewandtransferstudentsenrollmentPagePage implements OnInit {
   option2: boolean = false;
   option3: boolean = false;
   option4: boolean = false;
+  option5: boolean = false;
   checkbox1: boolean = false;
   checkbox2: boolean = false;
   checkbox3: boolean = false;

@@ -53,17 +53,29 @@
    <br>
    <br>
    <ion-text>Subjects</ion-text>
-   <ion-item class="item-background-color">
-    <ion-input type="text" value=""></ion-input>
+   <ion-item *ngIf="selectedOptions.checkbox1" class="item-background-color">
+    <ion-input type="text" value="">IT 306 - Capstone Project 1</ion-input>
 </ion-item>
-<ion-item class="item-background-color">
-  <ion-input type="text" value=""></ion-input>
+<ion-item *ngIf="selectedOptions.checkbox2" class="item-background-color">
+  <ion-input type="text" value="">IT 401- Artificial Intelligence</ion-input>
 </ion-item>
-<ion-item class="item-background-color">
-  <ion-input type="text" value=""></ion-input>
+<ion-item *ngIf="selectedOptions.checkbox3" class="item-background-color">
+  <ion-input type="text" value="">IT 209- Human Computer Interaction</ion-input>
 </ion-item>
-<ion-item class="item-background-color">
-  <ion-input type="text" value=""></ion-input>
+<ion-item *ngIf="selectedOptions.checkbox4" class="item-background-color">
+  <ion-input type="text" value="">IT 102-Computer Programming 1</ion-input>
+</ion-item>
+<ion-item *ngIf="selectedOptions.checkbox5" class="item-background-color">
+  <ion-input type="text" value="">IT Elect 2-System Integration and Architecture 2</ion-input>
+</ion-item>
+<ion-item *ngIf="selectedOptions.checkbox6" class="item-background-color">
+  <ion-input type="text" value="">IT Elect 1- Mobile Application Development</ion-input>
+</ion-item>
+<ion-item *ngIf="selectedOptions.checkbox7" class="item-background-color">
+  <ion-input type="text" value="">GEEL 11-Living in the IT Era</ion-input>
+</ion-item>
+<ion-item *ngIf="selectedOptions.checkbox8" class="item-background-color">
+  <ion-input type="text" value="">GEEL 13-Gender and Society</ion-input>
 </ion-item>
 
 <ion-label>TOTAL UNITS FOR THE SEMESTER: 20</ion-label>
@@ -77,17 +89,17 @@
 
 <div style="width:85%; margin-left:auto;margin-right:auto;text-align:center;border:1px solid skyblue" id="rounded" >
 <ion-text>REQUIREMENTS</ion-text>
-   <ion-item class="item-background-color">
-    <ion-input type="text" value=""></ion-input>
+   <ion-item *ngIf="selectedOptions.option1" class="item-background-color">
+    <ion-input type="text" value="">Birth Certificate</ion-input>
 </ion-item>
-<ion-item class="item-background-color">
-  <ion-input type="text" value=""></ion-input>
+<ion-item *ngIf="selectedOptions.option2" class="item-background-color">
+  <ion-input type="text" value="">2X2 Picture</ion-input>
 </ion-item>
-<ion-item class="item-background-color">
-  <ion-input type="text" value=""></ion-input>
+<ion-item *ngIf="selectedOptions.option3" class="item-background-color">
+  <ion-input type="text" value="">TOR</ion-input>
 </ion-item>
-<ion-item class="item-background-color">
-  <ion-input type="text" value=""></ion-input>
+<ion-item *ngIf="selectedOptions.option4"  class="item-background-color">
+  <ion-input type="text" value="">Diploma</ion-input>
 </ion-item>
 
 </div>

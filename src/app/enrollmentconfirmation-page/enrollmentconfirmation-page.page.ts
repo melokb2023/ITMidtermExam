@@ -9,6 +9,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./enrollmentconfirmation-page.page.scss'],
 })
 export class EnrollmentconfirmationPagePage implements OnInit {
+ selectedOption: string ='navigationExtras;'
+ selectedOption2: string ='navigationExtras;'
  userInput1: string = 'navigationExtras';
  userInput2: string = 'navigationExtras';
  userInput3: string = 'navigationExtras';
@@ -17,7 +19,15 @@ export class EnrollmentconfirmationPagePage implements OnInit {
  userInput6: string = 'navigationExtras';
  userInput7: string = 'navigationExtras';
  userInput8: string = 'navigationExtras';
-  
+ checkbox1: string ='navigationExtras';
+ checkbox2: string ='navigationExtras';
+ checkbox3: string ='navigationExtras';
+ checkbox4: string ='navigationExtras';
+ checkbox5: string ='navigationExtras';
+ checkbox6: string ='navigationExtras';
+ checkbox7: string ='navigationExtras';
+ checkbox8: string ='navigationExtras';
+ selectedOptions: any;
  
  
 constructor(
@@ -36,6 +46,7 @@ constructor(
       this.userInput6 = params['userInput6'];
       this.userInput7 = params['userInput7'];
       this.userInput8 = params['userInput8'];
+      this.selectedOptions = JSON.parse(params['selectedOptions']);
     })
   }
 
