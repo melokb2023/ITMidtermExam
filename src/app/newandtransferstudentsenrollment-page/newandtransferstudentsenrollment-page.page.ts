@@ -32,6 +32,22 @@ export class NewandtransferstudentsenrollmentPagePage implements OnInit {
   checkbox6: boolean = false;
   checkbox7: boolean = false;
   checkbox8: boolean = false;
+  checkbox9: boolean = false;
+  checkbox10: boolean = false;
+  checkbox11: boolean = false;
+  checkbox12: boolean = false;
+  checkbox13: boolean = false;
+  checkbox14: boolean = false;
+  checkbox15: boolean = false;
+  checkbox16: boolean = false;
+  checkbox17: boolean = false;
+  checkbox18: boolean = false;
+  checkbox19: boolean = false;
+  checkbox20: boolean = false;
+  checkbox21: boolean = false;
+  checkbox22: boolean = false;
+  checkbox23: boolean = false;
+  checkbox24: boolean = false;
 
   constructor(
     private navCtrl: NavController,
@@ -75,44 +91,65 @@ export class NewandtransferstudentsenrollmentPagePage implements OnInit {
       const userInput8 = (document.getElementById('userInput8') as HTMLInputElement).value; 
 
       let selectedOptions = {
-         option1: this.option1,
-         option2: this.option2,
-         option3: this.option3,
-         option4: this.option4,
-         checkbox1:this.checkbox1,
-         checkbox2:this.checkbox2,
-         checkbox3:this.checkbox3,
-         checkbox4:this.checkbox4,
-         checkbox5:this.checkbox5,
-         checkbox6:this.checkbox6,
-         checkbox7:this.checkbox7,
-         checkbox8:this.checkbox8,
+        option1: this.option1,
+        option2: this.option2,
+        option3: this.option3,
+        option4: this.option4,
+        checkbox1:this.checkbox1,
+        checkbox2:this.checkbox2,
+        checkbox3:this.checkbox3,
+        checkbox4:this.checkbox4,
+        checkbox5:this.checkbox5,
+        checkbox6:this.checkbox6,
+        checkbox7:this.checkbox7,
+        checkbox8:this.checkbox8,
+        checkbox9:this.checkbox9,
+        checkbox10:this.checkbox10,
+        checkbox11:this.checkbox11,
+        checkbox12:this.checkbox12,
+        checkbox13:this.checkbox13,
+        checkbox14:this.checkbox14,
+        checkbox15:this.checkbox15,
+        checkbox16:this.checkbox16,
+        checkbox17:this.checkbox17,
+        checkbox18:this.checkbox18,
+        checkbox19:this.checkbox19,
+        checkbox20:this.checkbox20,
+        checkbox21:this.checkbox21,
+        checkbox22:this.checkbox22,
+        checkbox23:this.checkbox23,
+        checkbox24:this.checkbox24,
+        selectedOption2:this.selectedOption2
 
-      };
+     };
 
-      const navigationExtras = {
-        queryParams: {
-          selectedOption:this.selectedOption,
-          selectedOption2:this.selectedOption2,
-          selectedOptions:JSON.stringify(selectedOptions),
-          userInput1 : userInput1,
-          userInput2 : userInput2,
-          userInput3 : userInput3,
-          userInput4 : userInput4,
-          userInput5 : userInput5,
-          userInput6 : userInput6,
-          userInput7 : userInput7,
-          userInput8 : userInput8,
-          }
-      }
+     const navigationExtras = {
+       queryParams: {
+         selectedOption:this.selectedOption,
+         selectedOption2:this.selectedOption2,
+         selectedOptions:JSON.stringify(selectedOptions),
+         userInput1 : userInput1,
+         userInput2 : userInput2,
+         userInput3 : userInput3,
+         userInput4 : userInput4,
+         userInput5 : userInput5,
+         userInput6 : userInput6,
+         userInput7 : userInput7,
+         userInput8 : userInput8,
+         }
+     }
 
-      this.navCtrl.navigateForward('/enrollmentconfirmation-page',navigationExtras);
-  }
+     this.navCtrl.navigateForward('/enrollmentconfirmation-page',navigationExtras);
+ }
 
- 
+ goToSettings(){
+   this.navCtrl.navigateForward('/settings-page');
+ }
 
-  
-  goToSettings(){
-    this.navCtrl.navigateForward('/oldstudentenrollment-page');
-  }
+ goToEnrollment(){
+   this.navCtrl.navigateForward('/enrollmentconfirmation-page');
+ }
+
+
 }
+

@@ -49,16 +49,27 @@
   <br>
   <br>
    <ion-label >Course and Year:</ion-label>
-   <ion-input>{{selectedOption2}}</ion-input>
+   <ion-input>{{selectedOption2}} {{selectedOption}}</ion-input>
+   
+   <ion-item *ngIf="selectedOptions === 'FIRST YEAR'" class="item-background-color">
+    <ion-input type="text" value="">1</ion-input>
+  </ion-item>
+<ion-item *ngIf="selectedOptions === 'SECOND YEAR'" class="item-background-color">
+  <ion-input type="text" value="">2</ion-input>
+</ion-item>
+<ion-item *ngIf="selectedOptions === 'THIRD YEAR'" class="item-background-color">
+  <ion-input type="text" value="">3</ion-input>
+</ion-item>
+<ion-item *ngIf="selectedOptions === 'FOURTH YEAR'" class="item-background-color">
+  <ion-input type="text" value="">4</ion-input>
+</ion-item>
+   
 
   <ion-item *ngIf="selectedOptions === 'BSIT'" class="item-background-color">
        <ion-input type="text" value="">BSIT</ion-input>
    </ion-item>
    <ion-item *ngIf="selectedOptions === 'BSBA'" class="item-background-color">
      <ion-input type="text" value="">BSBA</ion-input>
-</ion-item>
- <ion-item *ngIf="selectedOptions === 'BSA'" class="item-background-color">
-  <ion-input type="text" value="">BSA</ion-input>
 </ion-item>
 <ion-item *ngIf="selectedOptions === 'BSAIS'" class="item-background-color">
   <ion-input type="text" value="">BSAIS</ion-input>
@@ -67,7 +78,6 @@
    <br>
    <br>
    <ion-text>Subjects</ion-text>
-   <ion-item *ngIf="selectedOptions === 'BSIT'" class="item-background-color">
    <ion-item *ngIf="selectedOptions.checkbox1" class="item-background-color">
     <ion-input type="text" value="">IT 306 - Capstone Project 1</ion-input>
 </ion-item>
@@ -92,60 +102,59 @@
 <ion-item *ngIf="selectedOptions.checkbox8" class="item-background-color">
   <ion-input type="text" value="">GEEL 13-Gender and Society</ion-input>
 </ion-item>
-</ion-item>
 
-<ion-item *ngIf="selectedOptions === 'BSIT'" class="item-background-color">
-  <ion-item *ngIf="selectedOptions.checkbox1" class="item-background-color">
-   <ion-input type="text" value="">IT 306 - Capstone Project 1</ion-input>
+
+
+  <ion-item *ngIf="selectedOptions.checkbox9" class="item-background-color">
+   <ion-input type="text" value="">Acc 122-Taxation</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox2" class="item-background-color">
- <ion-input type="text" value="">IT 401- Artificial Intelligence</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox10" class="item-background-color">
+ <ion-input type="text" value="">Prof Elect 3- Operations Auditing</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox3" class="item-background-color">
- <ion-input type="text" value="">IT 209- Human Computer Interaction</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox11" class="item-background-color">
+ <ion-input type="text" value="">CBMEC 1-Strategic Management</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox4" class="item-background-color">
- <ion-input type="text" value="">IT 102-Computer Programming 1</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox12" class="item-background-color">
+ <ion-input type="text" value="">Acc 119-Accountancy Research</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox5" class="item-background-color">
- <ion-input type="text" value="">IT Elect 2-System Integration and Architecture 2</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox13" class="item-background-color">
+ <ion-input type="text" value="">Acc 108-Strategic Cost Management</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox6" class="item-background-color">
- <ion-input type="text" value="">IT Elect 1- Mobile Application Development</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox14" class="item-background-color">
+ <ion-input type="text" value="">Tax 1 - Income Taxation</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox7" class="item-background-color">
- <ion-input type="text" value="">GEEL 11-Living in the IT Era</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox15" class="item-background-color">
+ <ion-input type="text" value="">FL 1 - Foreign Language</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox8" class="item-background-color">
+<ion-item *ngIf="selectedOptions.checkbox16" class="item-background-color">
  <ion-input type="text" value="">GEEL 13-Gender and Society</ion-input>
 </ion-item>
-</ion-item>
 
-<ion-item *ngIf="selectedOptions === 'BSBA'" class="item-background-color">
-  <ion-item *ngIf="selectedOptions.checkbox1" class="item-background-color">
-   <ion-input type="text" value="">IT 306 - Capstone Project 1</ion-input>
+
+
+  <ion-item *ngIf="selectedOptions.checkbox17" class="item-background-color">
+   <ion-input type="text" value="">GEC 18-Ethics</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox2" class="item-background-color">
- <ion-input type="text" value="">IT 401- Artificial Intelligence</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox18" class="item-background-color">
+ <ion-input type="text" value="">Law 2-Law on Obligations and Contracts</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox3" class="item-background-color">
- <ion-input type="text" value="">IT 209- Human Computer Interaction</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox19" class="item-background-color">
+ <ion-input type="text" value="">CBMEC 1-Strategic Management</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox4" class="item-background-color">
- <ion-input type="text" value="">IT 102-Computer Programming 1</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox20" class="item-background-color">
+ <ion-input type="text" value="">AIS 5-Information Security and Management</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox5" class="item-background-color">
- <ion-input type="text" value="">IT Elect 2-System Integration and Architecture 2</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox21" class="item-background-color">
+ <ion-input type="text" value="">Mgt 106-Strategic Business Analysis</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox6" class="item-background-color">
- <ion-input type="text" value="">IT Elect 1- Mobile Application Development</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox22" class="item-background-color">
+ <ion-input type="text" value="">AIS 7-Data Warehousing and Management</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox7" class="item-background-color">
- <ion-input type="text" value="">GEEL 11-Living in the IT Era</ion-input>
+<ion-item *ngIf="selectedOptions.checkbox23" class="item-background-color">
+ <ion-input type="text" value="">FL 1 - Foreign Language</ion-input>
 </ion-item>
-<ion-item *ngIf="selectedOptions.checkbox8" class="item-background-color">
+<ion-item *ngIf="selectedOptions.checkbox24" class="item-background-color">
  <ion-input type="text" value="">GEEL 13-Gender and Society</ion-input>
-</ion-item>
 </ion-item>
 
 

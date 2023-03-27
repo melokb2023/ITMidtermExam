@@ -12,27 +12,30 @@
 <br>
 <div style="width:85%; margin-left:auto;margin-right:auto;border:3px solid black" id="rounded" >
 <ion-label id="boldstraight">TEXT SIZE</ion-label>
-<ion-range></ion-range>
+<ion-range [(ngModel)] = "rangeValue" min="0" max="10" color="secondary">
+  <ion-icon slot="start" size="small" name="sunny-outline"></ion-icon>
+  <ion-icon slot="end" size="small" name="sunny"></ion-icon>
+</ion-range>
 
 <br>
 <br>
 <br>
 
   <ion-item>
-    <ion-toggle enable-on-off-labels="true"></ion-toggle>
-    <ion-button color="dark">DARK MODE</ion-button>
+    <ion-toggle [(ngModel)]="toggleLabel" (ngModelChange)="LightDarkMode($event)"></ion-toggle>
+    <ion-label>{{ toggleLabel ? 'LIGHT MODE' : 'DARK MODE' }}</ion-label>
   </ion-item>
   
 
-  <ion-label>TEXT SIZE SET TO: LARGEST</ion-label>
+  <ion-label>{{ rangeValue ? 'TEXT SIZE SET TO:LARGEST' : 'TEXT SIZE SET TO:SMALLEST' }}</ion-label>
 <br>
 <br>
-<ion-label>DARK MODE: ON</ion-label>
+<ion-label>{{ toggleLabel ? 'DARK MODE:OFF' : 'DARK MODE:ON' }}</ion-label>
 <br>
 <br>
-<ion-button color="success" id="boldstraight">SET</ion-button>
+<ion-button (click) = "goToMainMenu()" color="success" id="boldstraight">SET</ion-button>
 &nbsp;
-<ion-button id="boldstraight">BACK</ion-button>
+<ion-button (click) = "goToEnrollment()" id="boldstraight">BACK</ion-button>
 
 </div>
 </ion-content>

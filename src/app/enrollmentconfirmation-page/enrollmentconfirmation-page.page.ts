@@ -27,6 +27,22 @@ export class EnrollmentconfirmationPagePage implements OnInit {
  checkbox6: string ='navigationExtras';
  checkbox7: string ='navigationExtras';
  checkbox8: string ='navigationExtras';
+ checkbox9:string ='navigationExtras';
+ checkbox10:string ='navigationExtras';
+ checkbox11:string ='navigationExtras';
+ checkbox12:string ='navigationExtras';
+ checkbox13:string ='navigationExtras';
+ checkbox14:string ='navigationExtras';
+ checkbox15:string ='navigationExtras';
+ checkbox16:string ='navigationExtras';
+ checkbox17:string ='navigationExtras';
+ checkbox18:string ='navigationExtras';
+ checkbox19:string ='navigationExtras';
+ checkbox20:string ='navigationExtras';
+ checkbox21:string ='navigationExtras';
+ checkbox22:string ='navigationExtras';
+ checkbox23:string ='navigationExtras';
+ checkbox24:string ='navigationExtras';
  selectedOptions: any;
  
  
@@ -51,10 +67,14 @@ constructor(
       this.selectedOptions = JSON.parse(params['selectedOptions']);
     })
   }
-
+  
+  
  
   goBack(){
     this.navCtrl.navigateBack('/oldstudentenrollment-page');
+  }
+  goBack2(){
+    this.navCtrl.navigateBack('/newandtransferstudentenrollment-page');
   }
 
   goToSuccess(){

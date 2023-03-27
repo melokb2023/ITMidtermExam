@@ -12,25 +12,41 @@ export class EnrollmentsucessfulinformationPagePage implements OnInit {
 
   constructor(private navCtrl: NavController, private alertController:AlertController,private activatedRoute:ActivatedRoute) { }
   selectedOption: string ='navigationExtras;'
- selectedOption2: string ='navigationExtras;'
- userInput1: string = 'navigationExtras';
- userInput2: string = 'navigationExtras';
- userInput3: string = 'navigationExtras';
- userInput4: string = 'navigationExtras';
- userInput5: string = 'navigationExtras';
- userInput6: string = 'navigationExtras';
- userInput7: string = 'navigationExtras';
- userInput8: string = 'navigationExtras';
- checkbox1: string ='navigationExtras';
- checkbox2: string ='navigationExtras';
- checkbox3: string ='navigationExtras';
- checkbox4: string ='navigationExtras';
- checkbox5: string ='navigationExtras';
- checkbox6: string ='navigationExtras';
- checkbox7: string ='navigationExtras';
- checkbox8: string ='navigationExtras';
- selectedOptions: any;
- 
+  selectedOption2: string ='navigationExtras;'
+  userInput1: string = 'navigationExtras';
+  userInput2: string = 'navigationExtras';
+  userInput3: string = 'navigationExtras';
+  userInput4: string = 'navigationExtras';
+  userInput5: string = 'navigationExtras';
+  userInput6: string = 'navigationExtras';
+  userInput7: string = 'navigationExtras';
+  userInput8: string = 'navigationExtras';
+  checkbox1: string ='navigationExtras';
+  checkbox2: string ='navigationExtras';
+  checkbox3: string ='navigationExtras';
+  checkbox4: string ='navigationExtras';
+  checkbox5: string ='navigationExtras';
+  checkbox6: string ='navigationExtras';
+  checkbox7: string ='navigationExtras';
+  checkbox8: string ='navigationExtras';
+  checkbox9:string ='navigationExtras';
+  checkbox10:string ='navigationExtras';
+  checkbox11:string ='navigationExtras';
+  checkbox12:string ='navigationExtras';
+  checkbox13:string ='navigationExtras';
+  checkbox14:string ='navigationExtras';
+  checkbox15:string ='navigationExtras';
+  checkbox16:string ='navigationExtras';
+  checkbox17:string ='navigationExtras';
+  checkbox18:string ='navigationExtras';
+  checkbox19:string ='navigationExtras';
+  checkbox20:string ='navigationExtras';
+  checkbox21:string ='navigationExtras';
+  checkbox22:string ='navigationExtras';
+  checkbox23:string ='navigationExtras';
+  checkbox24:string ='navigationExtras';
+  selectedOptions: any;
+  
 
  ngOnInit() {
   this.activatedRoute.queryParams.subscribe((params) => {
