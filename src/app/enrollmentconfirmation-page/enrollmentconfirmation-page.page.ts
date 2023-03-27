@@ -38,6 +38,8 @@ constructor(
 
   ngOnInit() {
     this.activatedRoute.queryParams.subscribe((params) => {
+      this.selectedOption = params['selectedOption'];
+      this.selectedOption2 = params['selectedOption2'];
       this.userInput1 = params['userInput1'];
       this.userInput2 = params['userInput2'];
       this.userInput3 = params['userInput3'];

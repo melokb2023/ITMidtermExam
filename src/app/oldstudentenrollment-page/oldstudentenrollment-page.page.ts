@@ -72,7 +72,7 @@ export class OldstudentenrollmentPagePage implements OnInit {
       const userInput6 = (document.getElementById('userInput6') as HTMLInputElement).value;
       const userInput7 = (document.getElementById('userInput7') as HTMLInputElement).value;
       const userInput8 = (document.getElementById('userInput8') as HTMLInputElement).value; 
-
+      
       let selectedOptions = {
          option1: this.option1,
          option2: this.option2,
@@ -86,6 +86,7 @@ export class OldstudentenrollmentPagePage implements OnInit {
          checkbox6:this.checkbox6,
          checkbox7:this.checkbox7,
          checkbox8:this.checkbox8,
+         selectedOption2:this.selectedOption2
 
       };
 
