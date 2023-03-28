@@ -1,5 +1,5 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-
 import { NavController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 
@@ -24,7 +24,7 @@ export class OldstudentenrollmentPagePage implements OnInit {
   option2: boolean = false;
   option3: boolean = false;
   option4: boolean = false;
-  option5: boolean = false;
+  option5:string= '';
   checkbox1: boolean = false;
   checkbox2: boolean = false;
   checkbox3: boolean = false;
@@ -67,9 +67,17 @@ export class OldstudentenrollmentPagePage implements OnInit {
     const userInput7 = document.getElementById('userInput7') as HTMLIonInputElement;
     const userInput8 = document.getElementById('userInput8') as HTMLIonInputElement;
     const selectedOption2 = document.getElementById('selectedOption2') as HTMLIonSelectElement;
+    
     if (!userInput1.value || !userInput2.value || !userInput3.value || !userInput4.value || !userInput5.value || !userInput6.value || !userInput7.value || !userInput8.value || !selectedOption2.value){
       const alert = this.alertController.create({
         message:'Please fill up the following form.All of these are required.',
+        buttons: ['OK'],
+      });
+      alert.then((alert) => alert.present());
+    }
+    else if(this.option5 === 'option5'){
+      const alert = this.alertController.create({
+        message:'Please check the agree to terms.',
         buttons: ['OK'],
       });
       alert.then((alert) => alert.present());
@@ -94,6 +102,7 @@ export class OldstudentenrollmentPagePage implements OnInit {
          option2: this.option2,
          option3: this.option3,
          option4: this.option4,
+         option5:this.option5,
          checkbox1:this.checkbox1,
          checkbox2:this.checkbox2,
          checkbox3:this.checkbox3,
@@ -122,6 +131,8 @@ export class OldstudentenrollmentPagePage implements OnInit {
          selectedOption2:this.selectedOption2
 
       };
+
+     
 
       const navigationExtras = {
         queryParams: {

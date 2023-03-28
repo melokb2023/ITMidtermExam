@@ -31,11 +31,11 @@ constructor(
   }
   
   goToMainMenu(){
-    this.navCtrl.navigateForward('/index-page');
+     this.navCtrl.navigateForward('/index-page');
   }
 
   goToEnrollment(){
-    this.navCtrl.navigateForward('/studentstatus-page');
+     this.navCtrl.navigateForward('/studentstatus-page');
   }
   
  

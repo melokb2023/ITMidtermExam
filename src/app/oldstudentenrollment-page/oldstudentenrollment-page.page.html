@@ -69,7 +69,6 @@
        <ion-label>Course:</ion-label>
        <ion-select placeholder="Select course" id="selectedOption2"  [(ngModel)]="selectedOption2">
         <ion-select-option value="BSIT" >BSIT</ion-select-option>
-        <ion-select-option value="BSBA">BSBA</ion-select-option>
         <ion-select-option value="BSA" >BSA</ion-select-option>
         <ion-select-option value="BSAIS" >BSAIS</ion-select-option>
       </ion-select>
@@ -451,7 +450,7 @@
         <ion-grid>
           <ion-row>
             <ion-col>
-              <ion-checkbox [(ngModel)]="option4"class="checkbox-square"></ion-checkbox>
+              <ion-checkbox [(ngModel)]="option4" class="checkbox-square"></ion-checkbox>
               <ion-label>2x2 ID PICTURE</ion-label>
             </ion-col>
           </ion-row>
@@ -460,10 +459,16 @@
     
 </div>
 
+<br>
+<br>
+
 <div style="width:85%; margin-left:auto;margin-right:auto;border:1px solid skyblue" id="rounded" >
   <div style="width:85%; margin-left:auto;margin-right:auto;border:1px solid skyblue" id="rounded2" >
-    <ion-checkbox class="checkbox-square"></ion-checkbox>
-    <ion-label>I agree to the Terms of Use and Privacy Policy</ion-label>
+    
+     <ion-checkbox [(ngModel)]="option5" class="checkbox-square"></ion-checkbox>
+     <ion-label >I agree to the Terms of Use and Privacy Policy</ion-label>
+
+  
   </div>
 </div>
 
