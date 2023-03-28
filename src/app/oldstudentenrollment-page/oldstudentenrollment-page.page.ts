@@ -49,6 +49,16 @@ export class OldstudentenrollmentPagePage implements OnInit {
   checkbox22: boolean = false;
   checkbox23: boolean = false;
   checkbox24: boolean = false;
+  isChecked : boolean = true;
+  fullcalculation = this.selectedOption2.length * 5;
+
+  
+  
+
+
+
+  
+  
 
   constructor(private navCtrl: NavController,
     private alertController:AlertController) { }
@@ -57,6 +67,9 @@ export class OldstudentenrollmentPagePage implements OnInit {
 
   ngOnInit() {
   }
+
+
+ 
   checkInformation(){
     const userInput1 = document.getElementById('userInput1') as HTMLIonInputElement;
     const userInput2 = document.getElementById('userInput2') as HTMLIonInputElement;
@@ -68,7 +81,7 @@ export class OldstudentenrollmentPagePage implements OnInit {
     const userInput8 = document.getElementById('userInput8') as HTMLIonInputElement;
     const selectedOption2 = document.getElementById('selectedOption2') as HTMLIonSelectElement;
     
-    if (!userInput1.value || !userInput2.value || !userInput3.value || !userInput4.value || !userInput5.value || !userInput6.value || !userInput7.value || !userInput8.value || !selectedOption2.value){
+    if (!userInput1.value || !userInput2.value || !userInput3.value || !userInput4.value || !userInput5.value || !userInput6.value || !userInput7.value || !userInput8.value || !selectedOption2.value || !this.isChecked){
       const alert = this.alertController.create({
         message:'Please fill up the following form.All of these are required.',
         buttons: ['OK'],

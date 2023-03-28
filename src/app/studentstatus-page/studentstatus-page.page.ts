@@ -10,7 +10,7 @@ import { AlertController } from '@ionic/angular';
 export class StudentstatusPagePage implements OnInit {
 
   selectedOption:string= '';
-
+  
   
 constructor(
     private navCtrl: NavController,
@@ -40,18 +40,9 @@ constructor(
 
   }
 
-  
-    
 goToSettings(){
   this.navCtrl.navigateForward('/settings-page');
 }
   
-goToPage2(){
-  this.navCtrl.navigateForward('/newandtransferstudentsenrollment-page');
-  }
-
-goToPage3(){
-  this.navCtrl.navigateForward('/oldstudentenrollment-page');
-}
  
 }
